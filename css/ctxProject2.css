@@ -9,7 +9,7 @@ body {
     margin-left: 50px;
     margin-top: 20px;
 }
-
+/*
 #container {
     margin: 30px 0;
 }
@@ -108,7 +108,7 @@ table.dataTable tr.DTTT_selected.even td.sorting_2 {
 table.dataTable tr.DTTT_selected.even td.sorting_3 {
 	background-color: #861116;
 }
-
+*/
 .ctxFolderImg {
     background:transparent url('https://kboden.github.io/ctxjs/images/googledocs.png') no-repeat right top;
     width: 25px;
