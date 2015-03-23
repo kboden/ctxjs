@@ -1,0 +1,129 @@
+body {
+    width: 100%;
+}
+
+#loading {
+    background:transparent url('https://googledrive.com/host/0B8Umme_V5-ABUUU2Si1EMFc0bDA/images/ajax-loader-bar.gif') no-repeat left top;
+    width: 220px;
+    height: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#container {
+    margin: 30px 0;
+}
+
+#context {
+    margin: 0 0 0 2px;
+}
+
+#context div div {
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+#context #contextLabel {
+    font-weight: bold;
+    width: 70px;
+}
+
+div.DTED_Lightbox_Wrapper {
+    position: absolute;
+    top: 20px;
+    height: 500px;
+}
+
+table.dataTable tr.odd { 
+    background-color: #EEEEEE; 
+}
+
+table.dataTable tr.even { 
+    background-color: white; 
+}
+
+table.dataTable tr.odd td.sorting_1 { 
+    background-color: #D6D5D5; 
+}
+
+table.dataTable tr.odd td.sorting_2 { 
+    background-color: #E2E2E2; 
+}
+
+table.dataTable tr.odd td.sorting_3 { 
+    background-color: #ECECEC; 
+}
+
+table.dataTable tr.even td.sorting_1 { 
+    background-color: #F1F1F1; 
+}
+
+table.dataTable tr.even td.sorting_2 { 
+    background-color: #F3F3F3; 
+}
+
+table.dataTable tr.even td.sorting_3 { 
+    background-color: #F3F3F3; 
+}
+
+.paging_full_numbers a.paginate_active { 
+    background-color: #AB1E24; color: #FFF; 
+}
+
+table.dataTable tr.DTTT_selected {
+    color: #FFF;
+}
+
+table.dataTable tr.DTTT_selected.odd {
+    background-color: #AB1E24;
+}
+
+table.dataTable tr.DTTT_selected.odd td.sorting_1 {
+    background-color: #861116;
+}
+
+table.dataTable tr.DTTT_selected.odd td.sorting_2 {
+	background-color: #861116;
+}
+
+table.dataTable tr.DTTT_selected.odd td.sorting_3 {
+	background-color: #861116;
+}
+
+
+table.dataTable tr.DTTT_selected.even {
+	background-color: #BB1E24;
+}
+
+table.dataTable tr.DTTT_selected.even td.sorting_1 {
+	background-color: #861116;
+}
+
+table.dataTable tr.DTTT_selected.even td.sorting_2 {
+	background-color: #861116;
+}
+
+table.dataTable tr.DTTT_selected.even td.sorting_3 {
+	background-color: #861116;
+}
+
+.ctxFolderImg {
+    background:transparent url('https://googledrive.com/host/0B8Umme_V5-ABUUU2Si1EMFc0bDA/images/googledocs.png') no-repeat right top;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+
+.ui-dialog {
+    margin-top: 100px;
+    width: 400px;
+}
+
+.ui-widget {
+    font-size: 0.9em;
+}
