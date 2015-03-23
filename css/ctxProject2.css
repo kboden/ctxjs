@@ -17,7 +17,7 @@ body {
     width: 25px;
     height: 12px;
     margin-left: 20px;
-    display: inline-block;
+    display: none;
 }
 
 #container {
