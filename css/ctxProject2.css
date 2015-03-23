@@ -14,10 +14,10 @@ body {
 
 #ajaxLoader {
     background:transparent url('https://kboden.github.io/ctxjs/images/ajax-loader-small.gif') no-repeat left top;
-    width: 50px;
-    height: 25px;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 25px;
+    height: 12px;
+    margin-left: 20px;
+    display: inline-block;
 }
 
 #container {
