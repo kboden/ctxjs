@@ -23,18 +23,18 @@ window.refreshDataTable = function(dataTableId) {
     var dataTable = $('#' + dataTableId).dataTable();
     var oTT = TableTools.fnGetInstance( dataTableId );
     oTT.fnSelectNone();
-    $(dataTable).hide();
+    //$(dataTable).hide();
     $(".dataTables_info").hide();
     $(".dataTables_paginate").hide();
-    $(".dataTables_processing").css("visibility", "visible");
+    //$(".dataTables_processing").css("visibility", "visible");
     window.getLabelValuePairs();
     google.script.run.withSuccessHandler(function(data) { 
         dataTable.fnClearTable();
         dataTable.fnAddData(data);
-        dataTable.show("clip", {}, 500);
+        //dataTable.show("clip", {}, 500);
         $(".dataTables_info").show();
         $(".dataTables_paginate").show();
-        $(".dataTables_processing").css("visibility", "hidden");
+        //$(".dataTables_processing").css("visibility", "hidden");
     } ).getData(false);
     google.script.run.withSuccessHandler(function(data) { 
         $("#context").html(data);
