@@ -247,7 +247,7 @@ window.createEditor = function() {
                     .withSuccessHandler( function() {
                         successCallback({});
                     } )
-                    .deleteRecords(data.data);
+                    .deleteRecords(data.id);
             }
         },
         "i18n": {
