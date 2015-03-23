@@ -24,16 +24,16 @@ window.refreshDataTable = function(dataTableId) {
     var oTT = TableTools.fnGetInstance( dataTableId );
     oTT.fnSelectNone();
     //$(dataTable).hide();
-    $(".dataTables_info").hide();
-    $(".dataTables_paginate").hide();
+    //$(".dataTables_info").hide();
+    //$(".dataTables_paginate").hide();
     //$(".dataTables_processing").css("visibility", "visible");
     window.getLabelValuePairs();
     google.script.run.withSuccessHandler(function(data) { 
         dataTable.fnClearTable();
         dataTable.fnAddData(data);
         //dataTable.show("clip", {}, 500);
-        $(".dataTables_info").show();
-        $(".dataTables_paginate").show();
+        //$(".dataTables_info").show();
+        //$(".dataTables_paginate").show();
         //$(".dataTables_processing").css("visibility", "hidden");
     } ).getData(false);
     google.script.run.withSuccessHandler(function(data) { 
