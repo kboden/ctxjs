@@ -3,7 +3,7 @@ body {
 }
 
 #loading {
-    background:transparent url('https://googledrive.com/host/0B8Umme_V5-ABUUU2Si1EMFc0bDA/images/ajax-loader-bar.gif') no-repeat left top;
+    background:transparent url('https://kboden.github.io/ctxjs/images/ajax-loader-bar.gif') no-repeat left top;
     width: 220px;
     height: 25px;
     margin-left: 50px;
@@ -110,7 +110,7 @@ table.dataTable tr.DTTT_selected.even td.sorting_3 {
 }
 
 .ctxFolderImg {
-    background:transparent url('https://googledrive.com/host/0B8Umme_V5-ABUUU2Si1EMFc0bDA/images/googledocs.png') no-repeat right top;
+    background:transparent url('https://kboden.github.io/ctxjs/images/googledocs.png') no-repeat right top;
     width: 25px;
     height: 25px;
     margin-left: auto;
