@@ -28,9 +28,12 @@ window.refreshDataTable = function(dataTableId) {
     $(".dataTables_paginate").hide();
     $(".dataTables_processing").css("display", "inline");
     window.getLabelValuePairs();
-    google.script.run.withSuccessHandler(function(data) { 
+    google.script.run.withSuccessHandler(function(data) {
+    	var t = $('#' + dataTableId).DataTable();
+    	var p = t.page();
         dataTable.fnClearTable();
         dataTable.fnAddData(data);
+        t.page(p).draw(false);
         dataTable.show("clip", {}, 500);
         $(".dataTables_info").show();
         $(".dataTables_paginate").show();
