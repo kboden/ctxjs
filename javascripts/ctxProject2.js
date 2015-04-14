@@ -74,7 +74,7 @@ window.initApp = function() {
         autoOpen: false,
         width: 400,
         modal: true,
-        position: { my: "center top+10%", at: "center top+10%, of: window },
+        position: { my: "center top+10%", at: "center top+10%", of: window },
         buttons: {
             Ok: function() {
                 $( this ).dialog( "close" );
