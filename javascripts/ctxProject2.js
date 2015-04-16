@@ -231,7 +231,9 @@ window.createEditor = function() {
             if ( data.action === 'create' ) {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
-                    	alert(xhr.message);
+                    	if (xhr) {
+                    	   alert(xhr.message);
+                    	}
                         errorCallback(xhr, error, thrown);
                     })
                     .withSuccessHandler( function(record) {
@@ -242,11 +244,15 @@ window.createEditor = function() {
             else if ( data.action === 'edit' ) {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
-                    	alert(xhr.message);
+                    	if (xhr) {
+                    	   alert(xhr.message);
+                    	}
                         errorCallback(xhr, error, thrown);
                     })
                     .withSuccessHandler( function(record) {
-                    	alert(xhr.message);
+                    	if (xhr) {
+                    	   alert(xhr.message);
+                    	}
                         successCallback({"id": record.id, "row": record});
                     } )
                     .updateRecord(data.id, data.data);
