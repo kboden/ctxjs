@@ -232,8 +232,8 @@ window.createEditor = function() {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
                     	console.log(xhr);
-                    	console.log(error);
-                    	console.log(thrown);
+                    	console.log("test");
+                    	console.log("test");
                         errorCallback(xhr, "test", "test");
                     })
                     .withSuccessHandler( function(record) {
