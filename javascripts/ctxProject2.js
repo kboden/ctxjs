@@ -234,7 +234,7 @@ window.createEditor = function() {
                     	console.log(xhr);
                     	console.log(error);
                     	console.log(thrown);
-                        errorCallback(xhr, error, thrown);
+                        errorCallback(xhr, "test", "test");
                     })
                     .withSuccessHandler( function(record) {
                         successCallback({"id": record.id, "row": record});
