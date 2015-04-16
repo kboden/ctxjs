@@ -242,9 +242,11 @@ window.createEditor = function() {
             else if ( data.action === 'edit' ) {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
+                    	alert(xhr.message);
                         errorCallback(xhr, error, thrown);
                     })
                     .withSuccessHandler( function(record) {
+                    	alert(xhr.message);
                         successCallback({"id": record.id, "row": record});
                     } )
                     .updateRecord(data.id, data.data);
