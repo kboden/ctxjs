@@ -230,7 +230,12 @@ window.createEditor = function() {
  
             if ( data.action === 'create' ) {
                 google.script.run
-                    .withFailureHandler(errorCallback)
+                    .withFailureHandler(function(xhr, error, thrown) {
+                    	Logger.log(xhr);
+                    	Logger.log(error);
+                    	Logger.log(thrown);
+                        errorCallback(xhr, error, thrown);
+                    })
                     .withSuccessHandler( function(record) {
                         successCallback({"id": record.id, "row": record});
                     } )
