@@ -232,7 +232,8 @@ window.createEditor = function() {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
                     	if (xhr) {
-                    	   alert(xhr.message);
+                    	   $("#message").html("Fout: " + xhr.message);
+                           $( "#dialog-message" ).dialog( "open" );
                     	}
                         errorCallback(xhr, error, thrown);
                     })
@@ -245,7 +246,8 @@ window.createEditor = function() {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
                     	if (xhr) {
-                    	   alert(xhr.message);
+                    	   $("#message").html("Fout: " + xhr.message);
+                           $( "#dialog-message" ).dialog( "open" );
                     	}
                         errorCallback(xhr, error, thrown);
                     })
@@ -258,7 +260,8 @@ window.createEditor = function() {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
                     	if (xhr) {
-                    	   alert(xhr.message);
+                    	   $("#message").html("Fout: " + xhr.message);
+                           $( "#dialog-message" ).dialog( "open" );
                     	}
                         errorCallback(xhr, error, thrown);
                     })
