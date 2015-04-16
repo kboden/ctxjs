@@ -250,9 +250,6 @@ window.createEditor = function() {
                         errorCallback(xhr, error, thrown);
                     })
                     .withSuccessHandler( function(record) {
-                    	if (xhr) {
-                    	   alert(xhr.message);
-                    	}
                         successCallback({"id": record.id, "row": record});
                     } )
                     .updateRecord(data.id, data.data);
@@ -260,6 +257,9 @@ window.createEditor = function() {
             else if ( data.action === 'remove' ) {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
+                    	if (xhr) {
+                    	   alert(xhr.message);
+                    	}
                         errorCallback(xhr, error, thrown);
                     })
                     .withSuccessHandler( function() {
