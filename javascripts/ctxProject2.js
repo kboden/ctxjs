@@ -231,10 +231,8 @@ window.createEditor = function() {
             if ( data.action === 'create' ) {
                 google.script.run
                     .withFailureHandler(function(xhr, error, thrown) {
-                    	console.log(xhr);
-                    	console.log("test");
-                    	console.log("test");
-                        errorCallback(xhr, "test", "test");
+                    	alert(xhr.message);
+                        errorCallback(xhr, error, thrown);
                     })
                     .withSuccessHandler( function(record) {
                         successCallback({"id": record.id, "row": record});
@@ -243,7 +241,9 @@ window.createEditor = function() {
             }
             else if ( data.action === 'edit' ) {
                 google.script.run
-                    .withFailureHandler(errorCallback)
+                    .withFailureHandler(function(xhr, error, thrown) {
+                        errorCallback(xhr, error, thrown);
+                    })
                     .withSuccessHandler( function(record) {
                         successCallback({"id": record.id, "row": record});
                     } )
@@ -251,7 +251,9 @@ window.createEditor = function() {
             }
             else if ( data.action === 'remove' ) {
                 google.script.run
-                    .withFailureHandler(errorCallback)
+                    .withFailureHandler(function(xhr, error, thrown) {
+                        errorCallback(xhr, error, thrown);
+                    })
                     .withSuccessHandler( function() {
                         successCallback({});
                     } )
