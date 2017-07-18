@@ -67,7 +67,7 @@ window.formatTimestamp = function(data) {
     }
     var vDate = new Date(data);
     //return vDate.getDate() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getFullYear() + ' ' + vDate.getHours() + ':' + vDate.getMinutes() + ':' + vDate.getSeconds()
-    return vDate.getDate() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getFullYear() + ' ' + vDate.getLocaleTimeString();
+    return vDate.getDate() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getFullYear() + ' ' + vDate.toLocaleTimeString();
 }
 
 window.initApp = function() {
