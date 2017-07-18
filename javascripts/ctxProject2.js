@@ -57,7 +57,8 @@ window.formatDate = function(data) {
         return data;
     }
     var vDate = new Date(data);
-    return vDate.getDate() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getFullYear();
+    //return vDate.getDate() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getFullYear();
+    return vDate.toDateString();
 }
 
 window.formatTimestamp = function(data) {
@@ -65,6 +66,7 @@ window.formatTimestamp = function(data) {
         return data;
     }
     var vDate = new Date(data);
+    //return vDate.getDate() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getFullYear() + ' ' + vDate.getHours() + ':' + vDate.getMinutes() + ':' + vDate.getSeconds()
     return vDate.getDate() + '-' + (vDate.getMonth() + 1) + '-' + vDate.getFullYear() + ' ' + vDate.getLocaleTimeString();
 }
 
