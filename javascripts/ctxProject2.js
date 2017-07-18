@@ -66,7 +66,7 @@ window.formatTimestamp = function(data) {
         return data;
     }
     var vDate = new Date(data);
-    return vDate.getUTCDate() + '-' + (vDate.getUTCMonth() + 1) + '-' + vDate.getUTCFullYear() + ' ' + vDate.getUTCHours() + ':' + vDate.getUTCMinutes() + ':' + vDate.getUTCSeconds();
+    return vDate.getUTCDate() + '-' + (vDate.getUTCMonth() + 1) + '-' + vDate.getUTCFullYear() + ' ' + vDate.getHours() + ':' + vDate.getMinutes() + ':' + vDate.getSeconds();
 }
 
 window.initApp = function() {
